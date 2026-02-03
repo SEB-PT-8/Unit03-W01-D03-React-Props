@@ -1,8 +1,8 @@
-function Weather(props) {
+function Weather({day, tempreture}) {
   return (
     <div>
-        <p>Day: {props.day}</p>
-        <p>Tempreture: {props.tempreture}</p>
+        <p>Day: {day}</p>
+        <p>Tempreture: {tempreture}</p>
     </div>
   )
 }
