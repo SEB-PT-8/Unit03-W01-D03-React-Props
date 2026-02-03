@@ -8,7 +8,7 @@ function Greeting(props){
     const {studentName, course} = props
     return(
         <div>
-            <h1>Hello Good Morning {studentName}, I am currently learning {course}</h1>
+            <h1>Hello Good Morning {studentName}</h1>
         </div>
     )
 }
