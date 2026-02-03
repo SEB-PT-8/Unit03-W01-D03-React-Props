@@ -21,14 +21,47 @@ function App() {
   ]
 
 
+  
+  /* 
+  Exercise 1:
+
+  1. Create a simple Weather component that displays the day and tempreture
+  2. map through the array weatherData below and render the Weather component for each element we have in the array
+  3. Pass down the values for each day as a prop and display them in the component
+   */
+  const weatherData = [
+    {
+      day: "Saturday",
+      tempreture: 21
+    },
+    {
+      day: "Sunday",
+      tempreture: 19
+    },  
+    {
+      day: "Monday",
+      tempreture: 20
+    },  
+    {
+      day: "Tuesday",
+      tempreture: 10
+    },  
+    {
+      day: "Wednesday",
+      tempreture: 24
+    },
+  ]
+
+
   return (
     <>
       <h1>App Page</h1>
 
       {allStudents.map((oneStudent)=>
-      <div>
-        <Greeting studentName={oneStudent.studentName}/>
-      </div>
+        <div key={oneStudent.studentName}>
+          <Greeting studentName={oneStudent.studentName} grade={oneStudent.grade}/>
+        </div>
+        
       )}
     </>
   )

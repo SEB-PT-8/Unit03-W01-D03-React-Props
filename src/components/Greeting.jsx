@@ -9,6 +9,7 @@ function Greeting(props){
     return(
         <div>
             <h1>Hello Good Morning {studentName}</h1>
+            <p>Your grade is: {props.grade}</p>
         </div>
     )
 }
